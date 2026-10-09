@@ -1,0 +1,223 @@
+@media (max-width: 980px) {
+  .hero-inner {
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 0.8fr);
+    gap: 38px;
+  }
+
+  .hero-showcase {
+    min-height: 350px;
+    padding: 24px;
+  }
+
+  .hero-emblem {
+    right: 36px;
+    width: 144px;
+    height: 144px;
+  }
+
+  .category-grid,
+  .why-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .container {
+    width: min(100% - 36px, 1160px);
+  }
+
+  .nav {
+    height: 68px;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 68px;
+    right: 0;
+    left: 0;
+    display: flex;
+    overflow: hidden;
+    max-height: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 0 22px;
+    border-bottom: 1px solid transparent;
+    background: var(--bg);
+    box-shadow: 0 14px 20px rgba(24, 59, 52, 0.07);
+    transition: max-height 0.22s ease, padding 0.22s ease;
+  }
+
+  .nav-links.open {
+    max-height: 300px;
+    padding: 8px 22px 16px;
+    border-color: var(--line);
+  }
+
+  .nav-links a {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .nav-cta {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .brand img {
+    width: 38px;
+    height: 38px;
+  }
+
+  .hero {
+    padding: 54px 0 60px;
+  }
+
+  .hero-inner {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .hero h1 {
+    max-width: 620px;
+  }
+
+  .hero-showcase {
+    min-height: 300px;
+  }
+
+  .hero-emblem {
+    top: 64px;
+    right: 50px;
+  }
+
+  .section {
+    padding: 64px 0;
+  }
+
+  .about-grid,
+  .contact-grid,
+  .service-booking-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .product-listing {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .checkout-dialog {
+    padding: 27px 20px;
+  }
+
+  .footer-top {
+    align-items: flex-start;
+  }
+
+  .footer-top p {
+    flex-basis: 100%;
+    text-align: left;
+  }
+}
+
+@media (max-width: 520px) {
+  body {
+    font-size: 14px;
+  }
+
+  .container {
+    width: min(100% - 30px, 1160px);
+  }
+
+  .hero {
+    padding: 46px 0 50px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.35rem, 12vw, 3.25rem);
+  }
+
+  .hero-text {
+    font-size: 0.98rem;
+  }
+
+  .hero-showcase {
+    min-height: 280px;
+    padding: 22px;
+    border-radius: 16px;
+  }
+
+  .hero-emblem {
+    top: 62px;
+    right: 26px;
+    width: 118px;
+    height: 118px;
+  }
+
+  .hero-emblem svg {
+    width: 56px;
+    height: 56px;
+  }
+
+  .section {
+    padding: 54px 0;
+  }
+
+  .category-grid,
+  .product-listing,
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .category-card {
+    min-height: 190px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .contact-form {
+    padding: 20px;
+  }
+
+  .checkout-dialog {
+    padding: 25px 17px;
+  }
+
+  .checkout-form {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .product-visual {
+    height: 220px;
+  }
+
+  .footer-top,
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-bottom {
+    line-height: 1.6;
+  }
+
+  .admin-wrap {
+    width: min(100% - 28px, 1040px);
+    padding-top: 26px;
+  }
+
+  .admin-card {
+    padding: 18px;
+  }
+
+  .enquiry-card {
+    padding: 14px;
+  }
+}
